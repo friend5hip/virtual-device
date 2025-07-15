@@ -1,0 +1,130 @@
+.controlsContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* D-pad */
+.dPad {
+  position: absolute;
+  left: 30px;
+  top: 50px;
+  width: 90px;
+  height: 90px;
+}
+
+.dPadBtn {
+  background-color: #222;
+  position: absolute;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+  border: 5px solid #333;
+}
+
+.dPadBtn:active {
+  background-color: #555;
+}
+
+.up,
+.down {
+  width: 30px;
+  height: 90px;
+  left: 30px;
+}
+
+.left,
+.right {
+  width: 90px;
+  height: 30px;
+  top: 30px;
+}
+
+.up {
+  top: 0;
+  border-radius: 5px 5px 0 0;
+}
+.down {
+  bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+.left {
+  left: 0;
+  border-radius: 5px 0 0 5px;
+}
+.right {
+  right: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.dPadCenter {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  top: 30px;
+  left: 30px;
+}
+
+/* A/B Buttons */
+.abButtons {
+  position: absolute;
+  right: 30px;
+  top: 70px;
+  width: 120px;
+  transform: rotate(-30deg);
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #830344;
+  color: white;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  line-height: 51px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  border: 1.5px #d05084 solid;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: scale(0.95);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.aButton {
+  float: right;
+}
+.bButton {
+  float: left;
+}
+
+/* System Buttons */
+.systemButtons {
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 15px;
+}
+
+.selectButton,
+.startButton {
+  width: 70px;
+  height: 30px;
+  background: #555;
+  border-radius: 10px;
+  color: #ccc;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 8px;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.selectButton:active,
+.startButton:active {
+  background: #777;
+}

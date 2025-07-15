@@ -1,0 +1,39 @@
+.device {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 10px 10px 30px 30px;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  min-width: 400px;
+  min-height: 660px;
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+
+.upper,
+.lower {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lower {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 30px;
+}
+
+.lower .logo {
+  position: absolute;
+  top: -15px; /* 로고 위치 조정 */
+  left: 0px; /* 로고 위치 조정 */
+  font-size: 24px; /* 로고 크기 조정 */
+  color: V; /* 로고 색상 */
+  font-weight: bold;
+}
