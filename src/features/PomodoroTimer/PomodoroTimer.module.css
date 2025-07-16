@@ -1,0 +1,43 @@
+.pomodoroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+.phrase {
+  display: flex;
+  height: 60px;
+  font-size: 1.2em;
+  text-align: center;
+  align-items: center;
+}
+
+.modeDisplay {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modeDisplay span {
+  border: 4px dotted transparent; /* border를 미리 줘서 레이아웃 밀림 방지 */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.modeDisplay span.activeMode {
+  border: 4px dotted #333;
+}
+
+.timerDisplay h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.pomodoroCount {
+  margin-top: 20px;
+  font-size: 1.2em;
+}

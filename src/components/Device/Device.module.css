@@ -3,14 +3,43 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #ccc;
   border-radius: 10px 10px 30px 30px;
-  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4),
+    inset 0 4px 6px rgba(255, 255, 255, 0.2),
+    inset 0 -6px 8px rgba(0, 0, 0, 0.2);
+
   min-width: 400px;
-  min-height: 660px;
-  background-color: var(--primary-color);
+  min-height: 700px;
+
+  background: linear-gradient(145deg, #d3d3d3, #a8a8a8);
+
   padding: 20px;
+
+  border-bottom: 20px solid #666;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 30px 30px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.device::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  pointer-events: none;
 }
 
 .upper,
@@ -26,14 +55,4 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-top: 30px;
-}
-
-.lower .logo {
-  position: absolute;
-  top: -15px; /* 로고 위치 조정 */
-  left: 0px; /* 로고 위치 조정 */
-  font-size: 24px; /* 로고 크기 조정 */
-  color: V; /* 로고 색상 */
-  font-weight: bold;
 }
