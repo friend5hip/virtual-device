@@ -1,12 +1,12 @@
 .container {
   position: absolute;
-  right: 75px;
-  top: 75px;
+  right: 70px;
+  top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: var(--small-border-radius);
   z-index: 999;

@@ -7,6 +7,12 @@
   font-family: "Press Start 2P", sans-serif;
 }
 
+@media (max-width: 320px) {
+  .pomodoroContainer {
+    font-size: 0.6rem;
+  }
+}
+
 .phrase {
   display: flex;
   height: 60px;

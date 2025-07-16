@@ -9,8 +9,11 @@
     inset 0 4px 6px rgba(255, 255, 255, 0.2),
     inset 0 -6px 8px rgba(0, 0, 0, 0.2);
 
-  min-width: 400px;
-  min-height: 700px;
+  width: 400px;
+  height: 700px;
+  max-width: 400px;
+  max-height: 700px;
+  aspect-ratio: 400 / 700;
 
   background: linear-gradient(145deg, #d3d3d3, #a8a8a8);
 
@@ -25,6 +28,14 @@
 
   position: relative;
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .device {
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+  }
 }
 
 .device::before {
