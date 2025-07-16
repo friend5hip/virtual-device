@@ -22,7 +22,14 @@ export function Device() {
           onRight: pomodoroTimer.handleRightButton,
         };
       case "title":
-        return {};
+        return {
+          onA: () => {},
+          onB: () => {},
+          onUp: () => {},
+          onDown: () => {},
+          onLeft: () => {},
+          onRight: () => {},
+        };
       default:
         return {};
     }
