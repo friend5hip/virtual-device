@@ -4,13 +4,13 @@ This is a web application that emulates a virtual retro-style gaming device.
 
 Currently, it features a Pomodoro Timer, and more functionalities will be added in the future.
 
-## ✨ Key Features
+## Features
 
 - **Pomodoro Timer**: A timer designed to improve productivity by managing cycles of focus and break.
   - Supports Pomodoro, short break, and long break modes.
   - Each mode’s duration can be freely adjusted using the controller.
 
-## 🎮 How to Use
+## How to Use
 
 - **D-pad**: Used to switch timer modes or adjust time.
   - **Up/Down**: Cycle through Pomodoro / Short Break / Long Break modes.
