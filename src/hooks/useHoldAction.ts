@@ -19,8 +19,5 @@ export function useHoldAction(action: () => void, delay = 150) {
     onMouseDown,
     onMouseUp,
     onMouseLeave: onMouseUp,
-    onTouchStart: onMouseDown,
-    onTouchEnd: onMouseUp,
-    onTouchCancel: onMouseUp,
   };
 }
